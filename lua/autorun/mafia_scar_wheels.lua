@@ -1,0 +1,2 @@
+list.Set( "scar_wheels", "#Mafia Bolt Ace", { Material = "vgui/wheel_junker", wheelchanger_model = "models/mafia/fordt_wheel.mdl" , Value = "test" } )
+list.Set( "scar_wheels", "#Mafia Bolt Model B", { Material = "vgui/wheel_junker", wheelchanger_model = "models/mafia/FordA_wheel.mdl" , Value = "test" } )

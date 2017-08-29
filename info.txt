@@ -1,0 +1,11 @@
+"AddonInfo"
+{
+	"name"				"Mafia car sounds"
+	"version"			"0.1"
+	"up_date"			"18/09/13"
+	"author_name"			"Def"
+	"author_email"			""
+	"author_url"			""
+	"info"				"Mafia car engine sounds"
+	"override"			"0"
+}
