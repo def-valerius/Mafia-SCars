@@ -1,9 +1,9 @@
 ENT.Base = "sent_sakarias_scar_base"
 ENT.Type = "anim"
 
-ENT.PrintName = "forvRo"
-ENT.Author = "EDITOR"
-ENT.Category = "No Category"
+ENT.PrintName = "Bolt V8 Roadster"
+ENT.Author = "Def_Valerius"
+ENT.Category = "Mafia SCars"
 ENT.Information = ""
 ENT.AdminOnly = false
 ENT.Spawnable = false

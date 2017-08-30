@@ -1,9 +1,9 @@
 ENT.Base = "sent_sakarias_scar_base"
 ENT.Type = "anim"
 
-ENT.PrintName = "forVco"
-ENT.Author = "EDITOR"
-ENT.Category = "No Category"
+ENT.PrintName = "Bolt V8 Coupe"
+ENT.Author = "Def_Valerius"
+ENT.Category = "Mafia SCars"
 ENT.Information = ""
 ENT.AdminOnly = false
 ENT.Spawnable = false
@@ -27,8 +27,8 @@ ENT.RearLightsPos = {}
 
 ENT.effectPos = NULL
 
-ENT.DefaultSoftnesFront =5
-ENT.DefaultSoftnesRear =5
+ENT.DefaultSoftnesFront =30
+ENT.DefaultSoftnesRear =30
 
 ENT.CarMass =1200
 ENT.StabiliserOffset = NULL
@@ -55,49 +55,49 @@ local zPos = 0
 
 //SEAT POSITIONS
 --Seat Position 1
-xPos = -19
+xPos = -16
 yPos = -10
-zPos = 19
+zPos = 17
 ENT.SeatPos[1] = Vector(xPos, yPos, zPos)
 
 --Seat Position 2
-xPos = -19
+xPos = -16
 yPos = 10
-zPos = 19
+zPos = 17
 ENT.SeatPos[2] = Vector(xPos, yPos, zPos)
 
 //WHEEL POSITIONS
 --Wheel Position 1
-xPos = 63
+xPos = 75
 yPos = 29
-zPos = 10
+zPos = 8
 ENT.WheelInfo[1].Pos = Vector(xPos, yPos, zPos)
 ENT.WheelInfo[1].Side = true
 ENT.WheelInfo[1].Torq = false
 ENT.WheelInfo[1].Steer = 1
 
 --Wheel Position 2
-xPos = 63
+xPos = 75
 yPos = -28
-zPos = 10
+zPos = 8
 ENT.WheelInfo[2].Pos = Vector(xPos, yPos, zPos)
 ENT.WheelInfo[2].Side = false
 ENT.WheelInfo[2].Torq = false
 ENT.WheelInfo[2].Steer = 1
 
 --Wheel Position 3
-xPos = -52
+xPos = -42
 yPos = -27
-zPos = 10
+zPos = 8
 ENT.WheelInfo[3].Pos = Vector(xPos, yPos, zPos)
 ENT.WheelInfo[3].Side = false
 ENT.WheelInfo[3].Torq = true
 ENT.WheelInfo[3].Steer = 0
 
 --Wheel Position 4
-xPos = -52
+xPos = -42
 yPos = 28
-zPos = 10
+zPos = 8
 ENT.WheelInfo[4].Pos = Vector(xPos, yPos, zPos)
 ENT.WheelInfo[4].Side = true
 ENT.WheelInfo[4].Torq = true
@@ -105,28 +105,28 @@ ENT.WheelInfo[4].Steer = 0
 
 //FRONT LIGHT POSITIONS
 --Front light 1
-xPos = 65
+xPos = 75
 yPos = -16
-zPos = 34
+zPos = 32
 ENT.FrontLightsPos[1] = Vector(xPos, yPos, zPos)
 
 --Front light 2
-xPos = 65
+xPos = 75
 yPos = 17
-zPos = 34
+zPos = 32
 ENT.FrontLightsPos[2] = Vector(xPos, yPos, zPos)
 
 //REAR LIGHT POSITIONS
 --Rear light 1
-xPos = -83
+xPos = -72
 yPos = -27
-zPos = 18
+zPos = 16
 ENT.RearLightsPos[1] = Vector(xPos, yPos, zPos)
 
 --Rear light 2
-xPos = -83
+xPos = -72
 yPos = 28
-zPos = 18
+zPos = 16
 ENT.RearLightsPos[2] = Vector(xPos, yPos, zPos)
 
 //EXHAUST POSITIONS
