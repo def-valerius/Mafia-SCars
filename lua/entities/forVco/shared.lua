@@ -55,20 +55,20 @@ local zPos = 0
 
 //SEAT POSITIONS
 --Seat Position 1
-xPos = -16
+xPos = -15
 yPos = -10
 zPos = 17
 ENT.SeatPos[1] = Vector(xPos, yPos, zPos)
 
 --Seat Position 2
-xPos = -16
+xPos = -15
 yPos = 10
 zPos = 17
 ENT.SeatPos[2] = Vector(xPos, yPos, zPos)
 
 //WHEEL POSITIONS
 --Wheel Position 1
-xPos = 75
+xPos = 72
 yPos = 29
 zPos = 8
 ENT.WheelInfo[1].Pos = Vector(xPos, yPos, zPos)
@@ -77,7 +77,7 @@ ENT.WheelInfo[1].Torq = false
 ENT.WheelInfo[1].Steer = 1
 
 --Wheel Position 2
-xPos = 75
+xPos = 72
 yPos = -28
 zPos = 8
 ENT.WheelInfo[2].Pos = Vector(xPos, yPos, zPos)
@@ -86,7 +86,7 @@ ENT.WheelInfo[2].Torq = false
 ENT.WheelInfo[2].Steer = 1
 
 --Wheel Position 3
-xPos = -42
+xPos = -44
 yPos = -27
 zPos = 8
 ENT.WheelInfo[3].Pos = Vector(xPos, yPos, zPos)
@@ -95,7 +95,7 @@ ENT.WheelInfo[3].Torq = true
 ENT.WheelInfo[3].Steer = 0
 
 --Wheel Position 4
-xPos = -42
+xPos = -44
 yPos = 28
 zPos = 8
 ENT.WheelInfo[4].Pos = Vector(xPos, yPos, zPos)
@@ -107,13 +107,13 @@ ENT.WheelInfo[4].Steer = 0
 --Front light 1
 xPos = 75
 yPos = -16
-zPos = 32
+zPos = 31
 ENT.FrontLightsPos[1] = Vector(xPos, yPos, zPos)
 
 --Front light 2
 xPos = 75
 yPos = 17
-zPos = 32
+zPos = 31
 ENT.FrontLightsPos[2] = Vector(xPos, yPos, zPos)
 
 //REAR LIGHT POSITIONS
