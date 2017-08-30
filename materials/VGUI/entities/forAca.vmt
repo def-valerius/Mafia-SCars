@@ -1,6 +1,6 @@
 "UnlitGeneric"
 {
-	"$basetexture" "VGUI/entities/fordtTud"
+	"$basetexture" "VGUI/entities/ForAca"
 	"$nolod" 1
 	"$vertexalpha" 1
 	"$vertexcolor" 1
