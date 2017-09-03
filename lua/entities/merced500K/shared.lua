@@ -1,7 +1,7 @@
 ENT.Base = "sent_sakarias_scar_base"
 ENT.Type = "anim"
 
-ENT.PrintName = "Brubaker 4WD"
+ENT.PrintName = "Celeste Marque 500"
 ENT.Author = "Def_Valerius"
 ENT.Category = "Mafia SCars"
 ENT.Information = ""
@@ -11,13 +11,13 @@ ENT.AdminSpawnable = false
 
 ENT.AddSpawnHeight = 50
 ENT.ViewDist = 200
-ENT.ViewDistUp = 70
+ENT.ViewDistUp = 50
 
-ENT.NrOfSeats = 1
+ENT.NrOfSeats = 2
 ENT.NrOfWheels = 4
 ENT.NrOfExhausts = 1
-ENT.NrOfFrontLights = 0
-ENT.NrOfRearLights = 0
+ENT.NrOfFrontLights = 2
+ENT.NrOfRearLights = 2
 
 ENT.SeatPos = {}
 ENT.WheelInfo = {}
@@ -27,19 +27,19 @@ ENT.RearLightsPos = {}
 
 ENT.effectPos = NULL
 
-ENT.DefaultSoftnesFront =25
-ENT.DefaultSoftnesRear =25
+ENT.DefaultSoftnesFront =30
+ENT.DefaultSoftnesRear =30
 
-ENT.CarMass =1000
+ENT.CarMass =1200
 ENT.StabiliserOffset = NULL
 ENT.StabilisationMultiplier = 70
 
-ENT.DefaultSound = "mafia/miller_2.wav"
+ENT.DefaultSound = "mafia/merc_X.wav"
 ENT.EngineEffectName = "Mafia"
-ENT.HornSound = "mafia/horn3.wav"
+ENT.HornSound = "mafia/horn14.wav"
 
-ENT.CarModel = "models/mafia/miller.mdl"
-ENT.TireModel = "models/mafia/miller_wheel.mdl"
+ENT.CarModel = "models/mafia/merced500K.mdl"
+ENT.TireModel = "models/mafia/merced500K_wheel.mdl"
 ENT.AnimType = 1
 
 ENT.FrontLightColor = "220 220 160"
@@ -55,65 +55,95 @@ local zPos = 0
 
 //SEAT POSITIONS
 --Seat Position 1
-xPos = -31.89999961853
-yPos = -7.0999999046326
-zPos = 23
+xPos = -19
+yPos = -12
+zPos = 11
 ENT.SeatPos[1] = Vector(xPos, yPos, zPos)
+
+--Seat Position 2
+xPos = -19
+yPos = 11
+zPos = 11
+ENT.SeatPos[2] = Vector(xPos, yPos, zPos)
 
 //WHEEL POSITIONS
 --Wheel Position 1
-xPos = 62
-yPos = 22.89999961853
-zPos = 18
+xPos = 83
+yPos = 30
+zPos = 11
 ENT.WheelInfo[1].Pos = Vector(xPos, yPos, zPos)
 ENT.WheelInfo[1].Side = true
-ENT.WheelInfo[1].Torq = true
+ENT.WheelInfo[1].Torq = false
 ENT.WheelInfo[1].Steer = 1
 
 --Wheel Position 2
-xPos = 62
-yPos = -24.5
-zPos = 18
+xPos = 83
+yPos = -30
+zPos = 11
 ENT.WheelInfo[2].Pos = Vector(xPos, yPos, zPos)
 ENT.WheelInfo[2].Side = false
-ENT.WheelInfo[2].Torq = true
+ENT.WheelInfo[2].Torq = false
 ENT.WheelInfo[2].Steer = 1
 
 --Wheel Position 3
-xPos = -60
-yPos = 22.89999961853
-zPos = 18
+xPos = -51
+yPos = -30
+zPos = 11
 ENT.WheelInfo[3].Pos = Vector(xPos, yPos, zPos)
-ENT.WheelInfo[3].Side = true
+ENT.WheelInfo[3].Side = false
 ENT.WheelInfo[3].Torq = true
 ENT.WheelInfo[3].Steer = 0
 
 --Wheel Position 4
-xPos = -60
-yPos = -24.5
-zPos = 18
+xPos = -51
+yPos = 30
+zPos = 11
 ENT.WheelInfo[4].Pos = Vector(xPos, yPos, zPos)
-ENT.WheelInfo[4].Side = false
+ENT.WheelInfo[4].Side = true
 ENT.WheelInfo[4].Torq = true
 ENT.WheelInfo[4].Steer = 0
 
 //FRONT LIGHT POSITIONS
+--Front light 1
+xPos = 86
+yPos = 13
+zPos = 30
+ENT.FrontLightsPos[1] = Vector(xPos, yPos, zPos)
+
+--Front light 2
+xPos = 86
+yPos = -14
+zPos = 30
+ENT.FrontLightsPos[2] = Vector(xPos, yPos, zPos)
+
 //REAR LIGHT POSITIONS
+--Rear light 1
+xPos = -87
+yPos = 23
+zPos = 20
+ENT.RearLightsPos[1] = Vector(xPos, yPos, zPos)
+
+--Rear light 2
+xPos = -87
+yPos = -23
+zPos = 20
+ENT.RearLightsPos[2] = Vector(xPos, yPos, zPos)
+
 //EXHAUST POSITIONS
 --Exhaust 1
-xPos = -70
-yPos = 12
-zPos = 27
+xPos = -91.400001525879
+yPos = 5
+zPos = 3
 ENT.ExhaustPos[1] = Vector(xPos, yPos, zPos)
 
 //EFFECT POSITION
-xPos = 46
+xPos = 64.800003051758
 yPos = -0
-zPos = 35.400001525879
+zPos = 22.89999961853
 ENT.effectPos = Vector(xPos, yPos, zPos)
 
 //CAR CHARACTERISTICS
-ENT.DefaultAcceleration = 8000
+ENT.DefaultAcceleration = 7100
 ENT.DefaultMaxSpeed = 2800
 ENT.DefaultTurboEffect = 1
 ENT.DefaultTurboDuration = 1
@@ -124,8 +154,8 @@ ENT.DefaultBreakForce = 1050
 ENT.DefaultSteerForce = 5
 ENT.DefautlSteerResponse = 0.10000000149012
 ENT.DefaultStabilisation = 2000
-ENT.DefaultNrOfGears = 3
-ENT.DefaultAntiSlide = 100
+ENT.DefaultNrOfGears = 4
+ENT.DefaultAntiSlide = 30
 ENT.DefaultAutoStraighten = 5
 ENT.DeafultSuspensionAddHeight = 10
 ENT.DefaultHydraulicActive = 0
