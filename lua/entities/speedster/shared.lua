@@ -143,7 +143,7 @@ zPos = 41.900001525879
 ENT.effectPos = Vector(xPos, yPos, zPos)
 
 //CAR CHARACTERISTICS
-ENT.DefaultAcceleration = 6000
+ENT.DefaultAcceleration = 7400
 ENT.DefaultMaxSpeed = 2800
 ENT.DefaultTurboEffect = 1
 ENT.DefaultTurboDuration = 1

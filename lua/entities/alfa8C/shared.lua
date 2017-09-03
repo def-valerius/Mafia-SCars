@@ -34,7 +34,7 @@ ENT.CarMass =1000
 ENT.StabiliserOffset = NULL
 ENT.StabilisationMultiplier = 70
 
-ENT.DefaultSound = "mafia/alfa8C_2.wav"
+ENT.DefaultSound = "mafia/alfa8C_3.wav"
 ENT.EngineEffectName = "Mafia"
 ENT.HornSound = "mafia/horn12.wav"
 
