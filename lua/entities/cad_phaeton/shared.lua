@@ -88,7 +88,7 @@ ENT.SeatPos[5] = Vector(xPos, yPos, zPos)
 --Wheel Position 1
 xPos = 77
 yPos = 32
-zPos = 8
+zPos = 6
 ENT.WheelInfo[1].Pos = Vector(xPos, yPos, zPos)
 ENT.WheelInfo[1].Side = true
 ENT.WheelInfo[1].Torq = false
@@ -97,7 +97,7 @@ ENT.WheelInfo[1].Steer = 1
 --Wheel Position 2
 xPos = 77
 yPos = -31
-zPos = 8
+zPos = 6
 ENT.WheelInfo[2].Pos = Vector(xPos, yPos, zPos)
 ENT.WheelInfo[2].Side = false
 ENT.WheelInfo[2].Torq = false
@@ -106,7 +106,7 @@ ENT.WheelInfo[2].Steer = 1
 --Wheel Position 3
 xPos = -94
 yPos = -31
-zPos = 8
+zPos = 6
 ENT.WheelInfo[3].Pos = Vector(xPos, yPos, zPos)
 ENT.WheelInfo[3].Side = false
 ENT.WheelInfo[3].Torq = true
@@ -115,7 +115,7 @@ ENT.WheelInfo[3].Steer = 0
 --Wheel Position 4
 xPos = -94
 yPos = 32
-zPos = 8
+zPos = 6
 ENT.WheelInfo[4].Pos = Vector(xPos, yPos, zPos)
 ENT.WheelInfo[4].Side = true
 ENT.WheelInfo[4].Torq = true
