@@ -61,3 +61,7 @@ list.Set( "SCarEngineSounds", "#Mafia Lassiter V16 NPC", { carsound_enginesound 
 list.Set( "SCarEngineSounds", "#Mafia Lassiter V16 NPC1", { carsound_enginesound = "mafia/cad_NPC1.wav" } )
 list.Set( "SCarEngineSounds", "#Mafia Lassiter V16 NPC2", { carsound_enginesound = "mafia/cad_NPC2.wav" } )
 list.Set( "SCarEngineSounds", "#Mafia Lassiter V16 X", { carsound_enginesound = "mafia/cad_X.wav" } )
+list.Set( "SCarEngineSounds", "#Mafia Guardian Terraplane 0", { carsound_enginesound = "mafia/hudson_0.wav" } )
+list.Set( "SCarEngineSounds", "#Mafia Guardian Terraplane 2", { carsound_enginesound = "mafia/hudson_2.wav" } )
+list.Set( "SCarEngineSounds", "#Mafia Guardian Terraplane NPC", { carsound_enginesound = "mafia/hudson_NPC.wav" } )
+list.Set( "SCarEngineSounds", "#Mafia Guardian Terraplane X", { carsound_enginesound = "mafia/hudson_X.wav" } )
