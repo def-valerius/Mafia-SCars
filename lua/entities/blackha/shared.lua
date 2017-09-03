@@ -38,7 +38,7 @@ ENT.DefaultSound = "mafia/black_NPC.wav"
 ENT.EngineEffectName = "Mafia"
 ENT.HornSound = "mafia/horn12.wav"
 
-ENT.CarModel = "models/mafia/taxi.mdl"
+ENT.CarModel = "models/mafia/blackha.mdl"
 ENT.TireModel = "models/mafia/blackha_wheel.mdl"
 ENT.AnimType = 1
 
