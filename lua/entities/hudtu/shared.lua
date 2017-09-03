@@ -27,8 +27,8 @@ ENT.RearLightsPos = {}
 
 ENT.effectPos = NULL
 
-ENT.DefaultSoftnesFront =5
-ENT.DefaultSoftnesRear =5
+ENT.DefaultSoftnesFront =30
+ENT.DefaultSoftnesRear =30
 
 ENT.CarMass =1300
 ENT.StabiliserOffset = NULL
