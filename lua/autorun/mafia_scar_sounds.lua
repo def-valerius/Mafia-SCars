@@ -65,3 +65,16 @@ list.Set( "SCarEngineSounds", "#Mafia Guardian Terraplane 0", { carsound_engines
 list.Set( "SCarEngineSounds", "#Mafia Guardian Terraplane 2", { carsound_enginesound = "mafia/hudson_2.wav" } )
 list.Set( "SCarEngineSounds", "#Mafia Guardian Terraplane NPC", { carsound_enginesound = "mafia/hudson_NPC.wav" } )
 list.Set( "SCarEngineSounds", "#Mafia Guardian Terraplane X", { carsound_enginesound = "mafia/hudson_X.wav" } )
+list.Set( "SCarEngineSounds", "#Mafia Schubert Extra Six 0", { carsound_enginesound = "mafia/chev6_0.wav" } )
+list.Set( "SCarEngineSounds", "#Mafia Schubert Extra Six 1", { carsound_enginesound = "mafia/chev6_1.wav" } )
+list.Set( "SCarEngineSounds", "#Mafia Schubert Extra Six 2", { carsound_enginesound = "mafia/chev6_2.wav" } )
+list.Set( "SCarEngineSounds", "#Mafia Schubert Extra Six NPC", { carsound_enginesound = "mafia/chev6_NPC.wav" } )
+list.Set( "SCarEngineSounds", "#Mafia Schubert Six 0", { carsound_enginesound = "mafia/cheve_0.wav" } )
+list.Set( "SCarEngineSounds", "#Mafia Schubert Six 1", { carsound_enginesound = "mafia/cheve_1.wav" } )
+list.Set( "SCarEngineSounds", "#Mafia Schubert Six 2", { carsound_enginesound = "mafia/cheve_2.wav" } )
+list.Set( "SCarEngineSounds", "#Mafia Schubert Six 3", { carsound_enginesound = "mafia/cheve_3.wav" } )
+list.Set( "SCarEngineSounds", "#Mafia Schubert Six NPC", { carsound_enginesound = "mafia/cheve_NPC.wav" } )
+list.Set( "SCarEngineSounds", "#Mafia Schubert Six X", { carsound_enginesound = "mafia/cheve_X.wav" } )
+
+
+
