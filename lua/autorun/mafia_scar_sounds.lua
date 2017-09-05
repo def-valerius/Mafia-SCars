@@ -116,6 +116,6 @@ list.Set( "SCarEngineSounds", "#Mafia Bolt Truck 3", { carsound_enginesound = "m
 list.Set( "SCarEngineSounds", "#Mafia Bolt Truck NPC", { carsound_enginesound = "mafia/truck_NPC.wav" } )
 list.Set( "SCarEngineSounds", "#Mafia Bolt Truck r", { carsound_enginesound = "mafia/truck_r.wav" } )
 list.Set( "SCarEngineSounds", "#Mafia Bolt Truck X", { carsound_enginesound = "mafia/truck_X.wav" } )
-
-
+list.Set( "SCarEngineSounds", "#Mafia Airplane 1", { carsound_enginesound = "mafia/air1.1.wav" } )
+list.Set( "SCarEngineSounds", "#Mafia Airplane 2", { carsound_enginesound = "mafia/air1.2.wav" } )
 
