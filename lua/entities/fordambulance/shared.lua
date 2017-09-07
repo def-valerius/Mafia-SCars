@@ -13,6 +13,9 @@ ENT.AddSpawnHeight = 100
 ENT.ViewDist = 200
 ENT.ViewDistUp = 70
 
+ENT.SirenIsOn = false
+ENT.SirenSound = NULL
+
 ENT.NrOfSeats = 3
 ENT.NrOfWheels = 4
 ENT.NrOfExhausts = 1
@@ -173,6 +176,7 @@ function ENT:Initialize()
 	self:Setup()
 
 	if (SERVER) then
+		self.SirenSound = CreateSound(self.Entity,"mafia/sirene2.wav")
 		--Setting up the car characteristics
 		self:SetAcceleration( self.DefaultAcceleration )
 		self:SetMaxSpeed( self.DefaultMaxSpeed )
@@ -198,10 +202,65 @@ function ENT:Initialize()
 	end
 end
 
+ENT.IsBroken = false
 function ENT:SpecialThink()
+
+	if (SERVER) then
+		local driver = self:GetDriver()
+		if driver:IsPlayer() then
+
+			if self.Horn:IsPlaying() and self.SirenSound:IsPlaying() then
+				self.SirenSound:Stop()
+			elseif self.SirenIsOn and !self.SirenSound:IsPlaying() and !self.Horn:IsPlaying() then
+				self.SirenSound:Play()
+			end
+		
+			if !self.Horn:IsPlaying() and self.SirenIsOn == false  and SCarKeys:KeyWasReleased(driver, "Special") then
+				SCarKeys:KillKey(driver, "Special")
+				self.SirenIsOn = true
+				self:SetNetworkedBool("SirenIsOn", true)
+				self.SirenSound:Play()
+			elseif !self.Horn:IsPlaying() and self.SirenIsOn == true  and SCarKeys:KeyWasReleased(driver, "Special") then
+				SCarKeys:KillKey(driver, "Special")
+				self.SirenIsOn = false
+				self:SetNetworkedBool("SirenIsOn", false)
+				self.SirenSound:Stop()		
+			end
+		else
+		
+			if self.SirenSound:IsPlaying() then
+				self.SirenSound:Stop()
+			end
+		end
+		
+		if self.CarHealth <= 0 and self.IsBroken == false then
+			self.IsBroken = true
+			self.SirenIsOn = false
+			self:SetNetworkedBool("SirenIsOn", false)
+			if self.SirenSound:IsPlaying() then
+				self.SirenSound:Stop()
+			end			
+		else
+			self.IsBroken = false
+		end
+	end		
 end
 
 function ENT:SpecialRemove()	
+	if self.SirenSound != NULL then
+		self.SirenSound:Stop()
+	end
+end
+
+function ENT:SpecialRefreshSounds()
+	self.SirenSound = CreateSound(self.Entity,"mafia/sirene2.wav")
+	
+	if self:HasDriver() and !self.Horn:IsPlaying() and self.SirenIsOn == true then
+		SCarKeys:KillKey(driver, "Special")
+		self.SirenIsOn = false
+		self:SetNetworkedBool("SirenIsOn", false)
+		self.SirenSound:Stop()
+	end
 end
 
 function ENT:SpecialReposition()
