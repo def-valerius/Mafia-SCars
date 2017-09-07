@@ -33,7 +33,7 @@ ENT.effectPos = NULL
 ENT.DefaultSoftnesFront =30
 ENT.DefaultSoftnesRear =30
 
-ENT.CarMass =1500
+ENT.CarMass =950
 ENT.StabiliserOffset = NULL
 ENT.StabilisationMultiplier = 70
 
@@ -152,16 +152,16 @@ zPos = 22.89999961853
 ENT.effectPos = Vector(xPos, yPos, zPos)
 
 //CAR CHARACTERISTICS
-ENT.DefaultAcceleration = 6400
-ENT.DefaultMaxSpeed = 2800
-ENT.DefaultTurboEffect = 1
-ENT.DefaultTurboDuration = 1
-ENT.DefaultTurboDelay = 1
-ENT.DefaultReverseForce = 595.20001220703
-ENT.DefaultReverseMaxSpeed = 200
-ENT.DefaultBreakForce = 1050
+ENT.DefaultAcceleration = 4000
+ENT.DefaultMaxSpeed = 1300
+ENT.DefaultTurboEffect = 0
+ENT.DefaultTurboDuration = 0
+ENT.DefaultTurboDelay = 0
+ENT.DefaultReverseForce = 700
+ENT.DefaultReverseMaxSpeed = 400
+ENT.DefaultBreakForce = 2000
 ENT.DefaultSteerForce = 5
-ENT.DefautlSteerResponse = 0.10000000149012
+ENT.DefautlSteerResponse = 0.1
 ENT.DefaultStabilisation = 2000
 ENT.DefaultNrOfGears = 3
 ENT.DefaultAntiSlide = 30
