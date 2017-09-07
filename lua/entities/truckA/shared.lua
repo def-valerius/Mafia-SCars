@@ -163,9 +163,9 @@ ENT.effectPos = Vector(xPos, yPos, zPos)
 //CAR CHARACTERISTICS
 ENT.DefaultAcceleration = 7700
 ENT.DefaultMaxSpeed = 1500
-ENT.DefaultTurboEffect = 1
-ENT.DefaultTurboDuration = 1
-ENT.DefaultTurboDelay = 1
+ENT.DefaultTurboEffect = 0
+ENT.DefaultTurboDuration = 0
+ENT.DefaultTurboDelay = 0
 ENT.DefaultReverseForce = 1000
 ENT.DefaultReverseMaxSpeed = 400
 ENT.DefaultBreakForce = 3700
